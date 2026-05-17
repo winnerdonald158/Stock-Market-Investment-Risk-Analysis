@@ -1,0 +1,23 @@
+                                               BUSINESS QUESTION
+Which stocks experienced the biggest price drops?
+
+                   Query
+SELECT 
+	name,
+	ROUND(
+	  MAX((high-low) /high)* 100,
+	2
+	)AS price_drop
+FROM stock_data
+GROUP BY name
+ORDER BY price_drop DESC;
+
+
+Insight:
+This shows that stock XL had a decrease by 85% making it risky for the company and which may affect the investors negatively and reduce the company’s
+market value perception.
+
+
+Recommendtaion:
+The company should closely monitor stocks with repeated sharp declines and consider applying stop-loss strategies or portfolio diversification to reduce
+investment exposure.
