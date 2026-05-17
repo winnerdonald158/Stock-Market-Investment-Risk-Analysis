@@ -1,0 +1,42 @@
+                                            BUSINESS QUESTIONS
+Which stocks recorded the highest growth over time?
+
+                          Query                                          
+    SELECT DISTINCT
+    name,
+    FIRST_VALUE(close) OVER(
+                             PARTITION BY name 
+                             ORDER BY date) AS starting_price,
+    LAST_VALUE(close) OVER(
+                           PARTITION BY name 
+                            ORDER BY date ROWS BETWEEN
+                            UNBOUNDED PRECEDING AND UNBOUNDED FOLLOWING 
+                            ) AS ending_price,
+    ROUND(
+        ( LAST_VALUE(close) OVER(
+                                PARTITION BY name ORDER BY date 
+                             ROWS BETWEEN UNBOUNDED PRECEDING AND UNBOUNDED FOLLOWING
+                    )
+            -
+            FIRST_VALUE(close) OVER(PARTITION BY name ORDER BY date
+            )
+        )
+        /
+        FIRST_VALUE(close) OVER(
+            PARTITION BY name
+            ORDER BY date
+        ) * 100,
+    2) AS growth_percentage
+FROM stock_data
+ORDER BY growth_percentage DESC;
+
+
+Insight:
+The result shows the stocks with the strongest long term growth based on their starting and ending prices. Stocks with higher growth percentages
+indicate stronger long-term investment performance and better market appreciation over time.
+
+
+Recommendation:
+The company should focus more on stocks with consistent long-term growth patterns, as they may provide better investment opportunities and stronger
+future returns.
+
