@@ -1,0 +1,47 @@
+                                            BUSINESS QUESTION
+Which periods recorded the highest trading activity?
+
+                                QUERY
+Yearly trends
+SELECT
+	EXTRACT(YEAR FROM date) AS highest_trading_year,
+	SUM(volume) AS highest_trade
+FROM stock_data
+GROUP BY
+		EXTRACT(YEAR FROM date)
+ORDER BY
+		highest_trade DESC;
+
+Monthly Trends
+SELECT
+	EXTRACT(MONTH FROM date) AS highest_trading_month,
+	SUM(volume) AS highest_trade
+FROM stock_data
+GROUP BY
+		EXTRACT(MONTH FROM date)
+ORDER BY
+		highest_trade DESC;
+
+
+SELECT
+	EXTRACT(YEAR FROM date) AS highest_trading_year,
+	EXTRACT(MONTH FROM date) AS highest_trading_month,
+	SUM(volume) AS highest_trade
+FROM stock_data
+GROUP BY
+		EXTRACT(YEAR FROM date),
+		EXTRACT(MONTH FROM date)
+ORDER BY
+		highest_trade DESC;
+
+                  Insight:
+From the first query thats the yearly trends, it shows that 2016 was the highest overall  trading year
+While from the second query,it shows that January  is the highest trading month
+Now combining the two queries,now the result shows that 2016 January is the highest  trading date,followed by February which is not suppose to be so but because it was linked to the year were trading was high,it became the second trading date
+2016 recorded the highest overall trading activity, while January showed the highest monthly trading volume. This suggests stronger investor participation and market activity during those periods.
+
+               Recommendation:
+The company should monitor periods with unusually high trading activity because they may indicate major market movements, investor confidence shifts,
+or increased volatility
+The company should monitor periods with unusually high trading activity because they may indicate major market movements, investor confidence shifts, or increased volatility.
+
