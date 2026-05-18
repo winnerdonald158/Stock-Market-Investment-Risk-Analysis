@@ -1,22 +1,22 @@
                               Stock Market Investment Risk Analysis
 PostgreSQL and Power BI used to analyze stock market data to understand stock growth trends, market volatility, trading activity, investment risk, and overall market behavior across multiple companies.
                                 
-                                Project Overview
+                                     Project Overview
 This project focuses on analyzing stock market data to identify profitable stocks, monitor risky investments, understand trading activity trends, and evaluate stock performance over time.
 Using PostgreSQL for business analysis and Power BI for visualization, I explored stock growth trends, price fluctuations, trading volume behavior, stock volatility or unstable stock , investment risk levels, and overall market activity to generate meaningful business insights.
 
-                             The goal of this project is:
+                                 The goal of this project is:
 •	To identify high-performing stocks
 •	To detect risky and unstable stocks
 •	To understand stock market behavior over time
 •	To monitor trading activity trends
 •	To analyze stock volatility and investment risk
 
-                             The Tools I Used
+                                         The Tools I Used
 •	PostgreSQL
 •	Power BI
                       
-                           Skills Demonstrated
+                                        Skills Demonstrated
 •	SQL Queries
 •	Aggregate Functions
 •	Window Functions
@@ -29,7 +29,7 @@ Using PostgreSQL for business analysis and Power BI for visualization, I explore
 •	Dashboard Design
 •	Financial Data Interpretation
 
-                              Business Objectives
+                                       Business Objectives
 •	To identify stocks with the highest growth over time
 •	To detect stocks with major price drops
 •	To identify the most volatile stocks
@@ -38,7 +38,7 @@ Using PostgreSQL for business analysis and Power BI for visualization, I explore
 •	To identify risky investment opportunities
 •	To provide inight recommendations for smarter investment decisions
 
-                          Repository Structure
+                                     Repository Structure
 •	Data → screenshots of visuals
 •	sql-analysis/ → SQL business questions, queries, insights and recommendations
 •	dashboard/ → Power BI dashboard screenshots and visuals
@@ -62,7 +62,7 @@ The dataset was cleaned and prepared by:
 •	Preparing the dataset for analysis and visualization
 
 
-                                 Key Findings
+                                            Key Findings
 Highest Growth Stocks:
 Some stocks recorded significant long-term growth over time, showing strong investment performance and market appreciation.
 
@@ -81,7 +81,7 @@ The average stock closing prices generally increased over the years, showing an 
 Investment Risk:
 Stocks with larger price fluctuations carried higher investment risk because of unstable and unpredictable price movement.
 
-                           Dashboard Preview
+                                             Dashboard Preview
 Stock Market Investment Risk Dashboard
 The dashboard includes:
 •	Total Stocks
@@ -103,7 +103,7 @@ The dashboard helps visualize:
 •	long-term market trends
 •	unstable stock movement
 
-                            Technical Approach
+                                             Technical Approach
 Data Processing
 •	Standardization of data types
 •	Date formatting
@@ -144,7 +144,7 @@ DAX measures for:
 
 The dashboard was designed for both technical and non-technical stakeholders.
                          
-                          Business Recommendations
+                                          Business Recommendations
 Highly volatile stocks should be monitored carefully because large price swings can lead to major investment losses.
 
 The company should diversify investment rather than relying heavily on unstable or high-risk stocks.
