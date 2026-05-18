@@ -1,0 +1,17 @@
+BUSINESS QUESTION
+Which trading days recorded the biggest losses?
+
+          Query
+SELECT
+	date,
+	ROUND(close - open,2) AS price_movement
+FROM stock_data
+WHERE close < open
+ORDER BY price_movement DESC;
+
+        Insight:
+Certain trading days experienced major negative price movements, indicating periods of strong selling pressure and market decline.
+
+         Recommendation:
+The company should monitor stocks with repeated losses to reduce exposure to unstable investment.
+
