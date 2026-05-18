@@ -1,0 +1,18 @@
+                                             BUSINESS QUESTION
+Does higher trading volume lead to bigger stock price movement?
+
+            Query 
+SELECT
+    name,
+    volume,
+    ROUND(close - open,2) AS price_movement
+FROM stock_data
+ORDER BY volume DESC;
+
+          Insight:
+This analysis shows that higher trading volume  don’t always  lead to higher movement in our stock price, meaning investor activity alone does not fully
+determine market price direction
+
+     Recommendation:
+The company should combine trading activity analysis with volatility and price trend monitoring before making investment decisions.
+
