@@ -5,18 +5,18 @@ PostgreSQL and Power BI used to analyze stock market data to understand stock gr
 This project focuses on analyzing stock market data to identify profitable stocks, monitor risky investments, understand trading activity trends, and evaluate stock performance over time.
 Using PostgreSQL for business analysis and Power BI for visualization, I explored stock growth trends, price fluctuations, trading volume behavior, stock volatility or unstable stock , investment risk levels, and overall market activity to generate meaningful business insights.
 
-                           The goal of this project is:
+                             The goal of this project is:
 •	To identify high-performing stocks
 •	To detect risky and unstable stocks
 •	To understand stock market behavior over time
 •	To monitor trading activity trends
 •	To analyze stock volatility and investment risk
 
-                         The Tools I Used
+                             The Tools I Used
 •	PostgreSQL
 •	Power BI
                       
-                        Skills Demonstrated
+                           Skills Demonstrated
 •	SQL Queries
 •	Aggregate Functions
 •	Window Functions
