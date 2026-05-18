@@ -1,0 +1,22 @@
+                                          BUSINESS QUESTION
+Which stocks are the most volatile?
+
+                                       Query
+SELECT 
+	name,
+	MAX(high)high_price,
+	MIN(low)low_price,
+	ROUND(
+	  MAX(high-low),2)price_drop
+FROM stock_data
+GROUP BY name
+ORDER BY price_drop DESC;
+
+
+Insight:
+From the data AMZN had the highest price movement than the rest of the stock in the dataset showing that its unstable and leading to  more market fluctuation 
+and more investment risk
+
+
+Recommendation
+Highly volatile stocks should be monitored carefully because large price swings can create both high return opportunities and significant investment losses
