@@ -1,0 +1,14 @@
+                                       BUSINESSS QUESTION
+Which trading days recorded the biggest positive price movement?
+
+                Query
+SELECT
+	EXTRACT (DAY FROM date) AS trending_days,
+	ROUND(close - open,2) AS price_movement
+FROM stock_data
+WHERE close > open
+ORDER BY price_movement DESC;
+
+
+Insight:
+Some trading days recorded extremely strong positive price movements, showing periods of high investor demand and bullish market activity.
