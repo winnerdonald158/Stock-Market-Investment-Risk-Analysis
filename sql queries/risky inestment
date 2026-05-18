@@ -1,0 +1,18 @@
+                             Business questions
+Which stocks carry the highest investment risk?
+
+                Query
+SELECT
+    name,
+   	MAX(high - low) AS unstable_movement
+	FROM stock_data
+	GROUP  BY name
+	ORDER BY unstable_movement DESC;
+
+
+             Insight:
+Stock with higher and unstable movement from the data risky investment options because their prices fluctuate more aggressively than others in the market.
+
+
+        Recommendation:
+The company should balance high risk stocks with more stable investments to reduce overall portfolio risk and maintain long term investment stability.
