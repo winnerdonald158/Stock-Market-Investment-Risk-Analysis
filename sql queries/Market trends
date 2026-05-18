@@ -1,0 +1,18 @@
+                                            Business questions
+Are stock prices generally increasing or decreasing over time?
+
+                         Query
+SELECT
+EXTRACT(YEAR FROM date)yearly_stock,
+ROUND(AVG(close),2)stock_price
+FROM stock_data
+GROUP BY EXTRACT(YEAR FROM date)
+ORDER BY stock_price ASC;
+
+
+Insight:
+The average stock closing prices generally increased over the years, showing an overall positive market trend and long-term stock growth.
+
+
+Recommendation:
+The company should continue tracking long-term market trends to identify strong-performing sectors and support future investment decisions
